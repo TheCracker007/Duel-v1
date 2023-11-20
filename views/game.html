@@ -1,0 +1,96 @@
+<html>
+<head>
+<link rel="stylesheet" href="stylesheets/style.css">
+<link rel="stylesheet" href="stylesheets/game.css">
+
+<title>Chain Duel</title>
+<link rel="icon" type="image/x-icon" href="/images/favicon.png">
+</head>
+<body>
+    <header id="brand">
+        <h2 id="chain">CHAIN</h2>
+        <h2 id="duel">DUEL</h2>
+    </header>
+
+    <h1 id="tournament-name" class="hero-outline in-game hide">The Merkle Tree</h1>
+
+    <div class="flex full game">
+        <div>
+          <div class="flex players">
+            <div id="player1info" class="condensed">
+              <div class="inline playerSquare white"></div>
+              <div class="inline" id="player1name">Player 1</div>
+            </div>
+            <div id="gameInfo" class="outline condensed"></div>
+            <div id="player2info" class="condensed">
+              <div class="inline" id="player2name">Player 2</div>
+              <div class="inline playerSquare black"></div>
+            </div>
+          </div>
+          <canvas id="titleCanvas"></canvas>
+          <div class="flex points">
+            <div class="player-sats player-sats-p1">
+              <span id="p1Points" class="condensed">0</span> <span class="grey">sats</span>
+            </div>
+
+            <div class="sponsorship" id="sponsorshipGame">
+              <img src="" class="sponsored-img" id="sponsoredImgBraket" />
+            </div>
+
+            <div class="player-sats player-sats-p2">
+              <span class="grey">sats</span> <span id="p2Points" class="condensed">0</span>
+            </div>
+          </div>
+          <canvas id="gameCanvas"></canvas>
+        </div>
+    </div>
+
+
+
+    <div class="bracketDetails in-game hide">
+
+      <div class="bracketDetail" id="bracketDetailPlayers">
+        <div class="label">
+          Players
+        </div>
+        <div class="value players">
+          <h3 id="numberOfPlayers">4</h3>
+        </div>
+      </div>
+
+      <div class="bracketDetail" id="bracketDetailFinalPrize">
+        <div class="label">
+          Final Prize
+        </div>
+        <div class="value">
+          <h3 id="bracketFinalPrize">400,000</h3> <span>sats</span>
+        </div>
+      </div>
+
+      <div class="bracketDetail" id="bracketDetailBuyIn">
+        <div class="label">
+          Buy In
+        </div>
+        <div class="value">
+          <h3 id="buyinvalue2">100,000</h3> <span>sats</span>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+    <audio id="audio" autoplay loop>
+      <!--
+        <source src="/sound/chain_duel_1.ogg" type="audio/ogg"/>
+        <source src="/sound/chain_duel_1.mp3" type="audio/mpeg"/>
+      -->
+      <source src="/sound/chain_duel_produced_game.m4a" type="audio/x-m4a">
+      </audio>
+</body>
+<script type="module" src="javascripts/game.js"></script>
+<script type="module" src="javascripts/value.js"></script>
+</html>

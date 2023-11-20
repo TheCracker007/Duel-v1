@@ -1,0 +1,153 @@
+<html>
+<head>
+<link rel="stylesheet" href="stylesheets/style.css">
+<link rel="stylesheet" href="stylesheets/tournbracket.css">
+
+<script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
+<script type="module" src="javascripts/tournbracket.js"></script>
+<script type="module" src="javascripts/value.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+<title>Chain Duel</title>
+<link rel="icon" type="image/x-icon" href="/images/favicon.png">
+</head>
+<body>
+
+  <header id="brand">
+      <h2 id="chain">CHAIN</h2>
+      <h2 id="duel">DUEL</h2>
+  </header>
+
+  <div class="flex full flex-center">
+    <div id="bracket">
+      <div class="pages">
+        <div id="page-1" class="page">
+          <div class="page-inner" id="pageinner">
+
+            <div class="tournament-header">
+              <div class="label">Tournament Lobby</div>
+              <h1 id="tournament-name" class="hero-outline">The Merkle Tree</h1>
+
+              <div class="sponsorship" id="sponsorshipBraket">
+                <div class="sponsored-by-label label" id="sponsoredByLabelBraket"></div>
+                <img src="" class="sponsored-img" id="sponsoredImgBraket" />
+              </div>
+
+            </div>
+
+            <object id="bracket4players" data="/images/tournament/svg/4_player.svg" class="tournbracket4SVG"></object>
+            <object id="bracket8players" data="/images/tournament/svg/8_player.svg" class="tournbracket8SVG"></object>
+            <object id="bracket16players" data="/images/tournament/svg/16_player.svg" class="tournbracket16SVG"></object>
+            <object id="bracket32players" data="/images/tournament/svg/32_player.svg" class="tournbracket32SVG"></object>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="bracketPayment" id="bracketPayment">
+
+    <div class="bracketPaymentInner">
+      <img src="" class="sponsored-img sponsorship" id="sponsoredImgBraket" />
+      <div class="buyintext" id="buyintext">
+        <div class="label mb-10" id="buyinDepositLabel">BUY IN DEPOSIT</div>
+        <div id="buyinp"><h3 class="buyinvalue" id="buyinvalue">10,000</h3> <span class="label" id="satsLabel">sats</span></div>
+        <div class="label mt-10" id="paymentNote">Set player name on payment note</div>
+      </div>
+      <div class="issuerefundsdiv" id="issuerefundsdiv">
+        <h2>Issue Refunds</h2>
+        <div id="issuerefundsfirst">
+          Are you sure you want to cancel?
+          <br/><br/>
+          This will display <b id="withdrawableuses">0</b> QR codes to withdraw <b id="withdrawablevaluefirst">10,000</b> sats for each of the players that already payed.
+          <br/><br/>Minus the fee.
+        </div>
+        <div id="issuerefundssecond" class="issuerefundssecond">
+          <div>Player</div>
+          <h1 id="currentWithdrawalPlayer" class="condensed">Player 1</h1>
+          <img id="qrWithdrawal" class="qrcode" />
+          <b class="label" id="withdrawablevalue">0</b> <span class="label">SATS</span>
+        </div>
+      </div>
+      <div class="qrCodeDiv mt-10" id="qrCodeDiv">
+        <img id="qrTournament" class="qrcode" />
+        <img id="qrTournamentCheck" src="/images/tournament/svg/tournCheck.svg"/>
+      </div>
+      <div class="deposited mt-10" id="satsdeposited">
+        <b class="depositedvalue" id="depositedvalue">0</b> <span class="label">SATS DEPOSITED</span>
+      </div>
+    </div>
+
+    <div class="buttonsDiv">
+      <button class="button" id="backButton" type="button">Cancel</button>
+      <button class="button disabled" id="proceedButton" type="button">Start</button>
+    </div>
+  </div>
+
+  <div class="nextGameDiv" id="nextGameDiv">
+  <p>
+    <p class="label">UP NEXT</p>
+    <h2 id="nextGameName" class="mb-0">GAME <span id="nextGameID">1</span></h2>
+    <div id="nextGamePlayers"><div class="inline playerSquare white"></div><span id="nextGame_P1" class="condensed playerName">G1_P1</span><span> vs </span><span id="nextGame_P2" class="condensed playerName">G1_P2</span><div class="inline playerSquare black"></div></div>
+    <button class="button nextGameButton" id="nextGameButton" type="button"><span>Start </span><span id="nextGameNumber">Game</span></button>
+  </p>
+  </div>
+
+
+
+
+
+  <div class="tournFinishedDiv" id="tournFinishedDiv">
+      <h2 class="m-0">⚡️🏆 CONGRATULATIONS 🏆⚡️</h2>
+      <h1><span id="winnerName">Player Name</span></h1>
+      <button class="button claimSatsButton" id="claimSatsButton" type="button"><span>Claim Sats</span></button>
+  </div>
+
+  <div class="bracketDetails">
+
+    <div class="bracketDetail" id="bracketDetailPlayers">
+      <div class="label">
+        Players
+      </div>
+      <div class="value players">
+        <h3 id="numberOfPlayers">4</h3>
+      </div>
+    </div>
+
+    <div class="bracketDetail" id="bracketDetailFinalPrize">
+      <div class="label">
+        Final Prize
+      </div>
+      <div class="value">
+        <h3 id="bracketFinalPrize">400,000</h3> <span>sats</span>
+      </div>
+    </div>
+
+    <div class="bracketDetail" id="bracketDetailBuyIn">
+      <div class="label">
+        Buy In
+      </div>
+      <div class="value">
+        <h3 id="buyinvalue2">100,000</h3> <span>sats</span>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+  <audio id="audio" autoplay loop>
+    <!--
+      <source src="/sound/chain_duel_1.ogg" type="audio/ogg"/>
+      <source src="/sound/chain_duel_1.mp3" type="audio/mpeg"/>
+    -->
+    <source src="/sound/chain_duel_produced_menu.m4a" type="audio/x-m4a">
+    </audio>
+</body>
+</html>

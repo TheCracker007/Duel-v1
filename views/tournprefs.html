@@ -1,0 +1,65 @@
+<html>
+<head>
+<link rel="stylesheet" href="stylesheets/style.css">
+<link rel="stylesheet" href="stylesheets/tournprefs.css">
+
+<script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
+<script type="module" src="javascripts/tournprefs.js"></script>
+<script type="module" src="javascripts/value.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+<title>Chain Duel</title>
+<link rel="icon" type="image/x-icon" href="/images/favicon.png">
+</head>
+<body>
+
+  <header id="brand">
+      <h2 id="chain">CHAIN</h2>
+      <h2 id="duel">DUEL</h2>
+  </header>
+
+  <div class="flex full flex-center">
+    <div id="tournprefs">
+
+        <h2 class="hero-outline condensed">Start Tournament</h2>
+
+        <div class="sponsorship" id="sponsorship-prefs">
+          <div class="sponsored-by-label label" id="sponsored-by-label-prefs"></div>
+          <img src="" class="sponsored-img" id="sponsored-img-prefs" />
+        </div>
+
+        <div class="mb-30">
+          <div class="choice">
+            <div class="label mb-10">Number of Players</div>
+            <div class="amount-preference">
+              <button class="button increment" id="decreasePlayersButton" type="button">-</button>
+                <div class="value-display">
+                  <h1 id="numberOfPlayers">4</h1>
+                </div>
+              <button class="button increment" id="increasePlayersButton" type="button">+</button>
+            </div>
+          </div>
+          <div class="choice">
+            <div class="label mb-10">Buy in (sats)</div>
+            <div class="amount-preference">
+              <button class="button increment" id="decreaseDepositButton" type="button">-</button>
+                <div class="value-display">
+                  <h1 id="depositValue">10,000</h1>
+                </div>
+              <button class="button increment" id="increaseDepositButton" type="button">+</button>
+            </div>
+          </div>
+        </div>
+
+      <button class="button" id="continueButton" type="button">Continue</button>
+      <button onclick="location.href='/';" class="button" id="mainmenubutton" type="button">MAIN MENU</button>
+    </div>
+
+  <audio id="audio" autoplay loop>
+    <!--
+      <source src="/sound/chain_duel_1.ogg" type="audio/ogg"/>
+      <source src="/sound/chain_duel_1.mp3" type="audio/mpeg"/>
+    -->
+    <source src="/sound/chain_duel_produced_menu.m4a" type="audio/x-m4a">
+    </audio>
+</body>
+</html>

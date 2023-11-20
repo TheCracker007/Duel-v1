@@ -1,0 +1,49 @@
+<html>
+<head>
+<link rel="stylesheet" href="stylesheets/style.css">
+<link rel="stylesheet" href="stylesheets/postGame.css">
+<script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+<title>Chain Duel</title>
+<link rel="icon" type="image/x-icon" href="/images/favicon.png">
+</head>
+<body>
+  <header id="brand">
+      <h2 id="chain">CHAIN</h2>
+      <h2 id="duel">DUEL</h2>
+  </header>
+  <div class="flex full flex-center">
+    <div class="flex">
+      <h2 id="gameOver">GAME OVER</h2>
+      <h1 id="winner">PLAYER 1 WINS</h1>
+    </div>
+
+    <div class="fees">
+      <span id="split1">2% <span id="hostFee"></span> to the Sponsor (@peeeiratehash)</span> · <span id="split2">2% <span id="developerFee"></span> to the developer (@francismars)</span> · <span id="split3">1% <span id="designerFee"></span> to the designer (@bitcoinanatomy)</span>
+    <div>
+    <h1 id="prize">100,000 SATS</h1>
+    <p id="claimText">CLAIM YOUR WINNINGS</p>
+    <image class="qrcode blur" id="qrCode1"></image>
+    <p id="claimReq1">Requires compatible wallet.</p>
+    <div id="buttonsDiv">
+              <button class="button" id="claimbutton" type="button">SWEEP VIA LNURL</button>
+              <button class="button" id="doubleornotthingbutton" type="button">DOUBLE OR NOTHING</button>
+              <button class="button" id="startnewbutton" type="button">RETURN TO MAIN MENU</button>
+    </div>
+    <div id="socialFollow">
+        Follow <img class="social-icon" src="images/social/Nostr.png" /> chainduel@nostrplebs.com  <img class="social-icon" src="images/social/Twitter.png" /> @chainduel</div>
+    </div>
+  </div>
+
+  <audio id="audio" autoplay loop>
+    <!--
+      <source src="/sound/chain_duel_1.ogg" type="audio/ogg"/>
+      <source src="/sound/chain_duel_1.mp3" type="audio/mpeg"/>
+    -->
+    <source src="/sound/chain_duel_produced_menu.m4a" type="audio/x-m4a">
+    </audio>
+</body>
+<script type="module" src="javascripts/value.js"></script>
+<script type="module" src="javascripts/postGame.js"></script>
+
+</html>
