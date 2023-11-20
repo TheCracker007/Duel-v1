@@ -1,0 +1,60 @@
+#mainmenubutton {
+    animation: glowing 2000ms infinite;
+}
+
+
+
+.amount-preference{
+  width: 25%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  text-transform: uppercase;
+  column-gap: 0;
+}
+
+.amount-preference .button{
+  display: inline-block;
+}
+
+
+.button.increment{
+  width: 3vw;
+  height: 3vw;
+  text-align: center;
+  margin: 0;
+}
+
+.value-display{
+  width: 50%;
+  text-align: center;
+}
+
+.value-display h1{
+  font-size: 3.5vw;
+}
+
+#depositValue {
+    display: inline;
+}
+
+#decreasePlayersButton{
+    animation: glowing 0ms infinite;
+}
+
+
+#increasePlayersButton{
+    animation: glowing 0ms infinite;
+}
+
+#increaseDepositButton{
+    animation: glowing 0ms infinite;
+}
+
+#decreaseDepositButton{
+    animation: glowing 0ms infinite;
+}
+
+#continueButton{
+    animation: glowing 0ms infinite;
+}

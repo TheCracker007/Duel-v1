@@ -1,0 +1,129 @@
+body{
+    background-color: black;
+}
+
+
+#gameOver{
+    position:static;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-align: center;
+    font-size: 3cqw;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: white;
+}
+
+#winner{
+    position:static;
+    margin-top: 0%;
+    text-align: center;
+    font-size: 3cqw;
+    color: white;
+    padding-top: 0%;
+    margin-bottom: 0%;
+}
+
+
+.fees {
+  width: 100%;
+  text-align: center;
+  font-size: 0.8cqw;
+  margin-top: 0.2%;
+}
+
+#hostFee, #developerFee, #claimReq1, #designerFee{
+    position:static;
+    margin-top: 0%;
+    text-align: center;
+    color: white;
+    padding-top: 0%;
+    margin-bottom: 0%;
+}
+
+
+
+#claimReq1{
+    margin-top: -1%;
+    font-size: 1cqw;
+}
+
+#prize{
+    position:static;
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 8cqw;
+    color: white;
+    padding-top: 0%;
+    margin-bottom: 0%;
+    text-shadow: 0 0 25px white
+}
+
+#claimText{
+    position:static;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 1.5cqw;
+    color: white;
+    margin: 20px 0 0 0;
+}
+
+#claimbutton:hover{
+    background-color: white;
+    color: black;
+  }
+
+#buttonsDiv{
+    display:flex;
+    flex-direction: column;
+}
+
+#startnewbutton{
+    display: none;
+    /*
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    width: 25%;
+    height: 3.5cqw;
+    font-size: 2cqw;
+    margin-left: 1%;
+    margin-right: auto;
+    */
+    animation: glowing 0ms infinite;
+}
+
+#claimbutton{
+    /*
+    display: block;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    width: 25%;
+    height: 3.5cqw;
+    font-size: 2cqw;
+    margin-left: auto;
+    margin-right: auto;
+    */
+    margin-bottom: 1%;
+    animation: glowing 2000ms infinite;
+}
+
+#doubleornotthingbutton{
+    margin-top: 0;
+    animation: glowing 0ms infinite;
+}
+
+#qrCode1{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    height: 13cqw;
+    width: 13cqw;
+    /*background-color: white;*/
+}
+
+.blur{
+  filter: blur(10px);
+}

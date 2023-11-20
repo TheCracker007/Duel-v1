@@ -1,0 +1,362 @@
+@import url('fonts/Inter/inter.css');
+
+@font-face {
+  font-family: "BureauGrotesque";
+  src: url("fonts/BureauGrotesque/BureauGrotesque.eot");
+  src: url("fonts/BureauGrotesque/BureauGrotesque.eot?#iefix") format("embedded-opentype"),
+  url("fonts/BureauGrotesque/BureauGrotesque.woff2") format("woff2"),
+  url("fonts/BureauGrotesque/BureauGrotesque.woff") format("woff"),
+  url("fonts/BureauGrotesque/BureauGrotesque.ttf") format("truetype"),
+  url("fonts/BureauGrotesque/BureauGrotesque.svg#BureauGrotesque") format("svg");
+}
+
+
+
+
+
+html, body, button {
+  font-family: 'Inter', sans-serif;
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  background-color: black;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url(../images/chainduel_bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+audio {
+    height: 0;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.inline{
+  display: inline-block;
+}
+
+.grey{
+  color: #fff;
+  opacity: 0.5;
+}
+
+.disabled {
+  opacity: 0.2;
+}
+
+.white{
+  background: #fff
+}
+
+.black{
+  background: #000
+}
+
+
+
+
+h1 {
+  text-align: center
+}
+
+h1, h2, h3, h4, .condensed {
+  margin-top: 0px;
+  line-height: 0.95;
+  font-family: "BureauGrotesque";
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: -0.05vw;
+}
+
+h2, h3 {
+    letter-spacing: 0.05vw;
+}
+
+.hide{
+  display: none !important;
+}
+
+.label {
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 0.8cqw;
+    text-transform: uppercase;
+    letter-spacing: 0.03rem;
+}
+
+
+
+.flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex-center{
+  justify-content:center;
+}
+
+.full{
+  width: 100vw;
+  min-height: 100vh
+}
+
+.flex.inline {
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+
+
+.mt-10{
+  margin-top: 1vw;
+}
+
+.mb-0 {
+  margin-bottom: 0
+}
+
+.mb-10{
+  margin-bottom: 1vw;
+}
+
+.mb-30{
+  margin-bottom: 3vw;
+}
+
+header{
+  display: flex;
+  justify-content: space-between
+}
+
+#brand {
+  position: fixed;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+
+#chain{
+    color: white;
+    margin-top: 0%;
+    margin-left: 1%;
+    text-align: left;
+    font-size: 2.5cqw;
+}
+
+#duel{
+    color: white;
+    margin-top: 0%;
+    text-align: right;
+    font-size: 2.5cqw;
+    margin-right: 1%;
+}
+
+@keyframes glowing {
+  0% {
+    background-color: rgb(255 255 255 / 15%);
+    box-shadow: 0 0 15px rgb(255 255 255);
+  }
+  50% {
+    background-color: rgb(255 255 255 / 30%);
+    box-shadow: 0 0 35px rgb(255 255 255);
+  }
+  100% {
+    background-color: rgb(255 255 255 / 15%);
+    box-shadow: 0 0 15px rgb(255 255 255);
+  }
+}
+
+
+.button{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    width: 25%;
+    height: 8%;
+    font-size: 0.8cqw;
+    padding: 1%;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+
+
+.double-button{
+  display: flex;
+  margin: auto;
+  width: 25%;
+  justify-content: space-between;
+  height: 8%;
+  gap: 4%;
+}
+
+.double-button .button{
+  margin: 0;
+  width: 49%;
+  height: 100%;
+  padding: 3.5%;
+}
+
+
+
+.hero-outline{
+    position:static;
+    margin-bottom: 1%;
+    text-align: center;
+    font-size: 8cqw;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: white;
+}
+
+
+.outline{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: white;
+}
+
+.center {
+  margin: auto;
+}
+
+.max-800{
+  max-width: 800px
+}
+
+
+.max-1200{
+  max-width: 1200px
+}
+
+
+.text-center{
+  text-align: center;
+}
+
+
+
+.qrcode {
+  filter: invert(1);
+  mix-blend-mode: screen;
+}
+
+
+
+#socialFollow {
+    font-size: 1cqw;
+}
+.social-icon {
+    display: inline-block;
+    height: 1.5cqw;
+    margin-bottom: -0.5cqw;
+}
+
+
+
+
+
+
+/*
+Bottom bar with game data for bracket screen and game screen
+*/
+
+.bracketDetails {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-top: 1px solid #ffffff36
+}
+
+
+.bracketDetail{
+  width: 25%;
+  padding:1vw;
+  box-sizing: border-box;
+  border-right: 1px solid #ffffff36;
+}
+
+
+.in-game .bracketDetail{
+  padding:0.5vw;
+}
+
+.bracketDetail:last-child{
+  border-right:none
+}
+.bracketDetail .label{
+  font-size:1vw;
+  text-transform: uppercase;
+  opacity:0.7
+}
+
+.in-game .bracketDetail .label{
+  font-size:0.8vw;
+}
+
+.bracketDetail .value{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: flex-end;
+  gap: 0.2vw;
+  padding-left: 1.5vw;
+}
+
+
+.bracketDetail .value.players{
+  padding-left: 0;
+}
+
+
+.bracketDetail .value h3{
+  font-size:3vw;
+  margin-bottom: 0;
+}
+
+.in-game .bracketDetail .value h3{
+  font-size:2vw;
+}
+
+
+
+
+
+
+
+
+
+.sponsorship{
+  display: none;
+  margin-bottom: 2%;
+}
+
+.sponsored-img{
+  height: 4vw;
+  margin: auto;
+  margin-top: 0.8vw;
+  display:block;
+}
+
+
+.sponsorship-amount{
+  font-weight: 900;
+}

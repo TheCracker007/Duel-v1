@@ -1,0 +1,136 @@
+body{
+    background-color: black;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../images/chainduel_bg_no_sat.jpg);
+}
+
+
+#titleCanvas{
+    margin: 0 15%;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+}
+
+#gameCanvas{
+    margin: 0 15%;
+    left: 0;
+    right: 0;
+    top: 28%;
+    background-color: #6969698f;
+
+    background-image: url(../images/game_bg.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.flex.full.game {
+    display: flex;
+    justify-content: center;
+    flex-grow: unset;
+    flex-basis: fit-content;
+}
+
+
+.flex.points, .flex.players {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 1rem 15%;
+}
+
+.flex.players {
+    margin-bottom: 0;
+}
+
+
+.playerSquare {
+    width: 2cqw;
+    height: 2cqw;
+    box-shadow: 0 0 11px #ffffffb0;
+}
+
+#player2info .playerSquare {
+    box-shadow: 0 0 27px #000000, 0 0 27px #000000;
+    border:1px #1f1f1f solid;
+    box-shadow: 0 0 11px #ffffffb0;
+}
+
+
+#player1info, #player2info, #gameInfo{
+  font-size: 2.5cqw;
+  width: 33.3333%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#gameInfo{
+  overflow: hidden;
+}
+
+#player1info {
+    color: white;
+    padding-top: 0px;
+    margin-bottom: 0px;
+}
+
+#player2info {
+    color: white;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0;
+    text-align:right
+}
+
+#gameInfo{
+  text-align: center;
+}
+
+
+.white {
+    background: #fff;
+}
+
+.black{
+  background: #000
+}
+
+.player-sats{
+  width: 25%;
+}
+
+.player-sats-p2{
+  text-align: right;
+}
+.player-sats span {
+  font-size: 1cqw;
+}
+
+
+#p1Points{
+    color: white;
+    margin-right: 0.5rem;
+    left: 15%;
+    top: 21%;
+    font-size: 2.5cqw;
+}
+
+#p2Points{
+    color: white;
+    margin-left: 0.5rem;
+    right: 15%;
+    top: 21%;
+    font-size: 2.5cqw;
+}
+
+
+.points .sponsorship {
+    margin-bottom: 0;
+}
+
+.points .sponsored-img {
+    height: 2.1vw;
+    margin-top: 0;
+    margin-bottom: -0.2vw;
+}

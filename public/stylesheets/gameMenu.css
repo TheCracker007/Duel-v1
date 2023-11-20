@@ -1,0 +1,309 @@
+body{
+    background-color: black;
+}
+
+
+#titleslogan{
+    color: white;
+    text-align: center;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    font-size: 1.5cqw;
+    font-weight: 300;
+}
+
+#centerSection{
+    display:flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* align-items: flex-start; */
+    /* flex-direction: row; */
+}
+
+#gameCard{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 25%;
+    display: block;
+}
+
+#gameImage {
+    height: 7cqw;
+    width: 14cqw;
+    background-color: #555;
+    box-shadow: 0 0 100px 1px #555;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 20px; */
+}
+
+#gameImage img {
+  width:100%;
+}
+
+.ruleTitle{
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 0.8cqw;
+    text-transform: uppercase;
+    letter-spacing: 0.03rem;
+}
+
+.gameDescription{
+    text-align: center;
+    font-size: 0.9cqw;
+}
+
+
+
+
+
+.rewards{
+  margin:auto;
+  width: 60%;
+}
+.reward-blocks{
+  text-align: left;
+}
+.reward-percent{
+  text-align: right;
+}
+
+
+#gameButtons{
+    padding-top: 3cqw;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    gap: 21px;
+}
+
+#gameButtons .button{
+  margin: 0
+}
+
+#mainmenubutton{
+    /*
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    width: 25%;
+    height: 3.5cqw;
+    font-size: 2cqw;
+    margin-right: 1cqw;
+    margin-left: auto;
+    */
+    animation: glowing 2000ms infinite;
+
+}
+
+#mainmenubutton:hover, #startgame:hover {
+    background-color: white;
+    color: black;
+  }
+
+#startgame{
+    /*
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    width: 25%;
+    height: 3.5cqw;
+    font-size: 2cqw;
+    margin-left: 1cqw;
+    margin-right: auto;
+    */
+    animation: glowing 0ms infinite;
+}
+
+#separator{
+    margin-top: 2cqw;
+    width:98%;
+    border: 1px solid grey;
+}
+
+#bottomInfo{
+    display: inline-flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1cqw;
+    border-top: 1px #ffffff30 solid;
+    padding: 1cqw;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+
+
+
+#player1card{
+    display: inline-flex;
+    width: 33%;
+}
+
+#qrcode1{
+    height: 10cqw;
+    width: 10cqw;
+}
+
+
+.player-card-info{
+  display: flex;
+  align-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+
+#player1cardinfo{
+    padding-left: 1cqw;
+    /* padding-top: 3cqw; */
+}
+#player1sats{
+    color: white;
+    font-size: 2cqw;
+    padding-bottom: 0px;
+}
+
+#player1info{
+    color: white;
+    font-size: 2.5cqw;
+    padding-top: 0px;
+    margin-bottom: 0.7cqw;
+    margin-top: 0.2cqw;
+}
+
+
+#prizeinfocard{
+    display: block;
+    width: 33%;
+}
+
+
+#splits {
+  margin-top: 0px;
+  color: grey;
+  text-align: center;
+  font-size: 0.8cqw;
+  margin: 1%;
+}
+
+
+#prizevaluesats{
+    margin-top: 0px;
+    color: white;
+    font-size: 3cqw;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#prizeinfosats{
+    margin-top: 0px;
+    color: white;
+    font-size: 1.5cqw;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#player2card{
+    display: flex;
+    width: 33%;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+#player2cardinfo{
+    /* position: absolute; */
+    /* right: 10.5cqw; */
+    text-align: right;
+    /* padding-top: 3cqw; */
+    padding-right: 1cqw;
+}
+
+#player2sats{
+    color: white;
+    font-size: 2cqw;
+    padding-bottom: 0px;
+}
+
+.sats-label {
+    font-size: 1.3cqw;
+}
+
+#player2info{
+    color: white;
+    font-size: 2.5cqw;
+    padding-top: 0px;
+    margin-bottom: 0.7cqw;
+    margin-top: 0.2cqw;
+}
+
+#qrcode2{
+    right: 0%;
+    height: 10cqw;
+    width: 10cqw;
+    position: relative;
+}
+
+
+.deposit-message{
+  font-size: 0.8cqw;
+  opacity: 0.5
+}
+
+
+.playerSquare{
+  width: 2cqw;
+  height: 2cqw;
+  box-shadow: 0 0 11px #ffffffb0;
+}
+
+#leaderboard {
+    color: #000;
+    text-align: center;
+    width: auto;
+    margin: auto;
+}
+
+#leaderboard-inner {
+  background: white;
+  padding: 1% 3%;
+  display: inline-block;
+  box-shadow: #ffffff6b 0px 0px 14px 5px;
+  border-radius: 32px;
+  margin: 2%;
+  margin-top: 1.3cqw;
+  font-size: 0.8cqw;
+}
+
+#leaderboardSats{
+  font-weight: bold;
+}
+
+
+
+
+
+#loading.overlay{
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  background: #000000cc;
+  position: fixed;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+#loading.overlay img{
+  display: block;
+  width: 7vw;
+  height: 7vw;
+}

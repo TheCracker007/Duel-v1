@@ -1,0 +1,91 @@
+body {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(../images/chainduel_bg.jpg);
+}
+
+#logo{
+    height: auto;
+    width: 20cqw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: 2%;
+    /* display:none */
+}
+
+#presents{
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+    font-size: 0.8cqw;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    /* display:none */
+}
+
+#chainduel{
+    text-align: center;
+    color: white;
+    font-size: 14cqw;
+    letter-spacing: -0.03em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#slogan{
+    margin-top: 0px;
+    text-align: center;
+    color: white;
+    letter-spacing: 0.1rem;
+    font-size: 0.8cqw;
+}
+
+
+
+/*
+#startgame:hover {
+    /* background-color: white; */ /*
+    color: black;
+  }
+/*
+#startgame:active {
+    background-color: white;
+    color: black;
+}
+*/
+
+
+#startgame {
+    animation: glowing 2000ms infinite;
+}
+
+#aboutbutton, #highscoresbutton, #starttourn{
+    animation: glowing 0ms infinite;
+}
+
+#bottomInfo{
+    display: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+#rules1{
+    text-align: center;
+    font-size: 0.8cqw;
+    margin-bottom: 1%;
+    letter-spacing: 0.03rem;
+    line-height: 1.4rem;
+}
+
+#rules2, #version{
+    margin-top: 0px;
+    text-align: center;
+    color: grey;
+    font-size: 0.8cqw;
+}
+
+
+#buttonlink {
+    all: unset;
+}
